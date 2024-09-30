@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Oswald:wght@500&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+:root {
+    --text-grey-color: hsl(244deg 15.31% 61.57%);
+    --text-purple-color: hsl(248.41deg 93.18% 65.49%);
+    --text-color: hsl(248deg 14.85% 19.8%);
+    --line-color: hsl(246.67deg 39.13% 95.49%)
+}
+
+
+
+/*! *********************** Start library **********************/
+/************************* colors *********************/
+.text-grey-color {
+    color: hsl(244deg 15.31% 61.57%);
+}
+
+.text-purple-color {
+    color: hsl(248.41deg 93.18% 65.49%);
+}
+
+.text-color {
+    color: hsl(248deg 14.85% 19.8%);
+}
+
+
+
+
+
+/************************* colors *********************/
+
+/*! *********************** End library **********************/
+
+
+
+/*! *********************** Nav **********************/
+nav {
+    box-shadow: 2px 9px 4px hsl(255deg 16.67% 95.29%);
+
+}
+
+.nav-span {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+    width: 115px;
+    border-color: var(--text-grey-color);
+    border-radius: 1em;
+}
+
+.nav-span:hover {
+    color: white;
+    background-color: var(--text-purple-color);
+
+}
+
+/*! *********************** Nav **********************/
+
+
+.info .container {
+    background-color: hsl(248.57deg 53.85% 97.45%);
+    border-radius: 30px;
+    height: 300px;
+
+}
+
+.info a {
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .info .container {
+        background-color: hsl(248.57deg 53.85% 97.45%);
+        border-radius: 30px;
+        height: 85px;
+        max-width: 50%;
+    }
+    :root {
+        font-size: 8px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .info .container {
+        background-color: hsl(248.57deg 53.85% 97.45%);
+        border-radius: 30px;
+        height: 125px;
+        max-width: 50%;
+    }
+}
+
+/******************************** start persons cards *****************************/
+.persons-cards .card {
+    height: 340px;
+    width: 317px;
+    transition: transform 0.3s;
+}
+
+.persons-cards .card:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.persons-cards .card:hover .card-body {
+    background-color: hsl(248.41deg 93.18% 65.49%);
+    color: #fff;
+}
+
+.persons-cards .card:hover h5 {
+    color: white;
+}
+
+.persons-cards .card:hover p,
+.persons-cards .card:hover a,
+.persons-cards .card:hover i {
+    color: white;
+}
+
+.persons-cards .btn-card {
+    background-color: transparent;
+    color: var(--text-purple-color);
+    border: none;
+}
+
+.persons-cards img {
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.btn-card-4 {
+    border-radius: 1em;
+    border: 2px solid var(--text-purple-color);
+    width: 12%;
+    color: var(--text-purple-color);
+
+
+}
+
+.persons-cards .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+    .btn-card-4 {
+        width: 30%;
+    }
+
+    .card {
+        max-height: 90%;
+    }
+   
+    
+}
+
+@media (max-width: 576px) {
+    .btn-card-4 {
+        width: 50%;
+    }
+    .card {
+        max-height: 55%;
+    }
+    
+}
+
+.pagination .mx-1 {
+    border: 1px solid hsl(216deg 17.24% 94.31%); 
+    padding: 5px; 
+    border-radius: 3px; 
+    width: 30px;
+}
+
+.pagination .mx-1:hover {
+    background-color: var(--text-purple-color); 
+    color: wheat;
+}
+
+.pagination .previous-btn {
+    border: 1px solid hsl(216deg 17.24% 94.31%); 
+    padding: 5px; 
+    border-radius: 3px; 
+    width: 70px;
+}
+
+.pagination .next-btn {
+    border: 1px solid hsl(216deg 17.24% 94.31%); 
+    padding: 5px; 
+    border-radius: 3px; 
+    width: 50px;
+}
+
+.bordered {
+    margin: 0 5px; 
+}
+
+
+
+
+/******************************** end persons cards *****************************/
+
+
+
+
+
+
+/*! *********************** Start Footer **********************/
+
+/******************************** Start Footer *****************************/
+
+.footer {
+    margin-bottom: 50px;
+}
+
+.mail-a,
+.phone-a {
+    text-decoration: none;
+    color: var(--text-purple-color);
+}
+
+.footer-mail {
+    height: 51px;
+    width: 200px;
+}
+
+.footer-mail::placeholder {
+    text-indent: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    color: var(--text-grey-color);
+}
+
+.social-icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: hsl(248.57deg 53.85% 97.45%);
+}
+
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    margin-right: 10px;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.social-icons i.fa-facebook-f:hover,
+.social-icons i.fa-twitter:hover,
+.social-icons i.fa-google:hover,
+.social-icons i.fa-linkedin-in:hover {
+    color: var(--text-purple-color);
+}
+
+
+
+
+.privacy-contact {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.privacy:hover,
+.contact:hover {
+    color: gold;
+
+}
+
+@media (max-width: 900px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        place-content: center;
+    }
+
+    .privacy-contact {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        place-content: center;
+    }
+
+    .privacy-contact {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .footer-mail {
+        height: 23px;
+        width: 94px;
+    }
+}
+
+
+
+/******************************** End Footer *****************************/
+
+
+/*! *********************** End Footer **********************/
